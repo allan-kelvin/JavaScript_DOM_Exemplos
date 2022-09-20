@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Js</title>
+    <style>
+        body{
+            background: #c0c0c0;
+            text-align: center;
+        }
+        .style-button{
+            padding: 10px;
+            background-color: blueviolet;
+            font-size: 15px;
+            border-style: none;
+            border-radius: 1rem;
+            color: #fff;
+        }
+        .style-button:hover{
+            background-color: darkorchid;
+            cursor: pointer;
+        }
+        .novoStyle{
+            padding: 10px;
+            background-color: darkblue;
+            font-size: 15px;
+            border-style: none;
+            border-radius: 1rem;
+            color: #fff;         
+        }
+        .novoStyle:hover{
+            background-color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="body">
+     <button class="style-button">
+        Abrir Janela
+     </button>
+
+
+     <script>
+        const button = document.querySelector('button');
+        button.addEventListener('click',mudarBotao);
+        
+        function mudarBotao(){
+          const evento= document.querySelector('button');
+          evento.classList.remove('style-button');
+          evento.classList.add('novoStyle');
+          evento.textContent="Clique novamente!";
+        }
+
+        function click(){
+            const clicando= document.querySelector('button');
+            clicando.classList.toggle('novoStyle');
+        }
+        
+     </script>
+</body>
+</html>

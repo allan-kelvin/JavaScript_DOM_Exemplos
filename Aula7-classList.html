@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+    <style>
+        .cor{
+            background-color: gray;
+        }
+        .font{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo">Aula7- ClassList</h1>
+    <input type="text">
+
+    <script>
+       // Com o classList eu posso adicionar classes do CSS no meu documento do HTML de forma dinamica
+       // Por exemplo, tenho a class .cor no meu style e ela não esta adicionada no meu documento HTML
+       // Com o classList eu adiciona essa class dinamicamente, fazendo mudar a cor do body
+        const element =document.querySelector('body');
+        element.classList.add('cor'); // add ele adiciona e pode ser usado o remove que ira removar a class
+        element.classList.toggle('font'); // o toggle funciona como um interruptor, quando nao  tem a class ele adiciona e quando ja tem, ele remove.
+        // aqui no caso como eu nao tenho adicionada a class font, ele foi e adicionou dinamicamente.
+
+    </script>
+    
+</body>
+</html>

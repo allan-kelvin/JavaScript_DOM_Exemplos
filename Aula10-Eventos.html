@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JS</title>
+</head>
+<body>
+    <header>
+        <h1> Aula 10 Eventos</h1>
+        <button onclick="print()">Clique aqui</button>
+        <button class="event">Clique aqui</button>
+
+        <input type="text" name="" id="" value="Clique aqui">
+
+    </header>
+
+    <script>
+        function print(){
+            console.log("Clicou no button");
+        }
+        function EventList(){
+            console.log("Clicou na função addEventListener ")
+        }
+        const input = document.querySelector('input');
+        input.onclick = function(){
+            console.log('Clicou no Input')
+        }
+  
+        //addRventListener (ouvindo eventos)
+        //serve para pegar eventos de forma mais rapida
+
+        const clickEvento=document.querySelector('.event');
+        clickEvento.addEventListener('click',EventList);
+
+    </script>
+    
+</body>
+</html>
